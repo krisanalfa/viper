@@ -1,0 +1,144 @@
+html, body {
+    background-color: #D8F3FD;
+    font-family: 'Lato';
+    height: 100%;
+}
+
+legend {
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.editor {
+    padding-left: 0;
+}
+
+.previewer {
+    background: #fff;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+    .nav-wrapper,
+    .list-wrapper,
+    .form-wrapper,
+    .new-toxic,
+    .toxic-wrapper {
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-wrapper,
+    .list-wrapper,
+    .form-wrapper,
+    .new-toxic,
+    .toxic-wrapper {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .previewer {
+        padding-top: 15px;
+    }
+}
+
+.title-input {
+    margin-bottom: 20px;
+}
+
+.editor-wrapper {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background: #F8F3F3;
+}
+
+.panel-image {
+    max-width: 80px;
+}
+
+textarea[data-editor=markdown] {
+    height: 700px;
+}
+
+.logo {
+    max-height: 200px;
+}
+
+.footer {
+    margin-bottom: 50px;
+}
+
+.cn-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.previewer {
+    display: block;
+    overflow: auto;
+    height: 698px;
+}
+
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    color: #B5B7BA;
+}
+
+.timeline-panel {
+    animation-delay:0.25s;
+    -moz-animation-delay:0.25s;
+    -webkit-animation-delay:0.25s;
+}
+
+.link-edit, .link-delete, .panel-footer a {
+    animation-delay:0.5s;
+    -moz-animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.timeline-badge.last-badge {
+    animation-delay:1.0s;
+    -moz-animation-delay:1.0s;
+    -webkit-animation-delay:1.0s;
+}
+.timeline > li:last-child {
+    margin-bottom: 100px;
+}
+
+.empty {
+    margin-top: 150px;
+}
+
+@media (min-width: 1200px) {
+    .container.new-toxic {
+        width: 1250px;
+    }
+}
+
+.panel-main-title {
+    margin-top: 15px;
+    padding-left: 90px;
+}
+
+.panel-main-title small {
+    font-size: 45%;
+    letter-spacing: -0.75px;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
