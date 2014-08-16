@@ -18,7 +18,7 @@
                                 <a href="{{ URL::site('/toxic/'.$entry->getId()) }}"> {{ $entry->get('title') }}</a>
                             </h4>
                             <p>
-                                <small class="text-muted"><i class="fa fa-pencil"></i> By {{ $entry->getAuthorName(); }}</small>
+                                <small class="text-muted"><i class="fa fa-pencil"></i> By {{ $entry->getAuthorName() }}</small>
                                 <br>
                                 <small class="text-muted"><i class="fa fa-clock-o"></i> Writed {{ $entry->sinceNow() }}</small>
                                 @if($entry->hasUpdated())

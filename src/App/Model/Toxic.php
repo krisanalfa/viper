@@ -23,12 +23,16 @@ class Toxic extends Model
         return $image;
     }
 
-    public function getAuthorName()
+    public function getAuthorName($usernameOnly = false)
     {
         $user = Norm::factory('User')->findOne($this->get('$created_by'));
 
         if (is_null($user)) {
             return 'NN';
+        }
+
+        if ($usernameOnly === true) {
+            return $user->get('username');
         }
 
         $name = [
@@ -53,28 +57,12 @@ class Toxic extends Model
 
     public function getCreatedTime()
     {
-        $time = $this->get('$created_time');
-
-        if (is_null($time)) {
-            return 'NOTIME_ATTACHED';
-        }
-
-        $entryDate = new Carbon($time);
-
-        return $entryDate->format('Y M, d H:i:s');
+        return $this->getFormatedTime($this->get('$created_time'));
     }
 
     public function getUpdatedTime()
     {
-        $time = $this->get('$updated_time');
-
-        if (is_null($time)) {
-            return 'NOTIME_ATTACHED';
-        }
-
-        $entryDate = new Carbon($time);
-
-        return $entryDate->format('Y M, d H:i:s');
+        return $this->getFormatedTime($this->get('$updated_time'));
     }
 
     public function hasUpdated()
@@ -82,6 +70,17 @@ class Toxic extends Model
         $createdTime = new Carbon($this->get('$created_time'));
         $updatedTime = new Carbon($this->get('$updated_time'));
 
-        return ($updatedTime->diffInSeconds($createdTime)) ? true : false;
+        return ($updatedTime->diffInSeconds($createdTime) > 0) ? true : false;
+    }
+
+    protected function getFormatedTime($time)
+    {
+        if (is_null($time)) {
+            return 'NOTIME_ATTACHED';
+        }
+
+        $entryDate = new Carbon($time);
+
+        return $entryDate->format('Y M, d H:i:s');
     }
 }
