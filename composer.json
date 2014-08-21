@@ -4,13 +4,21 @@
     "require": {
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
+
         "krisanalfa/bono-markdown": "~0.0.2",
         "krisanalfa/bono-blade": "~0.7.2",
         "krisanalfa/blade-theme": "~0.4.6",
         "krisanalfa/bono-kraken": "~0.0.2",
-        "ircmaxell/password-compat": "1.0.*",
+
         "reekoheek/bono-auth": "dev-master",
-        "nesbot/Carbon": "*"
+        "reekoheek/util": "dev-master",
+        "reekoheek/jsonkit": "dev-master",
+
+        "nesbot/Carbon": "*",
+
+        "filp/whoops": "1.*",
+
+        "ircmaxell/password-compat": "1.0.*"
     },
     "autoload": {
         "psr-0": {
@@ -20,12 +28,26 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/krisanalfa/bono"
+            "type": "package",
+            "package": {
+                "name": "xinix-technology/bono",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/krisanalfa/bono/archive/master.zip",
+                    "type": "zip"
+                }
+            }
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/krisanalfa/norm"
+            "type": "package",
+            "package": {
+                "name": "xinix-technology/norm",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/krisanalfa/norm/archive/master.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "config": {

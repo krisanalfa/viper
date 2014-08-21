@@ -45,7 +45,6 @@ Thumbs.db
 ####################################
 /node_modules
 /vendor
-/*.lock
 /bower_components
 
 # Spesific Reason #
