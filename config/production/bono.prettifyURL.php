@@ -3,5 +3,5 @@
 // BONO
 return [
     // Using prettyURL
-    'bono.prettifyURL' => false,
+    'bono.prettifyURL' => true,
 ];
