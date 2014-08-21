@@ -3,6 +3,7 @@
 use Norm\Model;
 use Norm\Norm;
 use Carbon\Carbon;
+use Bono\App;
 
 class Toxic extends Model
 {
@@ -82,5 +83,10 @@ class Toxic extends Model
         $entryDate = new Carbon($time);
 
         return $entryDate->format('Y M, d H:i:s');
+    }
+
+    public function overView($length = 150)
+    {
+        return substr(strip_tags(App::getInstance()->container['markdown']->render(html_entity_decode(html_entity_decode(html_entity_decode($this->get('content')))))), 0, $length);
     }
 }

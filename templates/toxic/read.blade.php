@@ -12,7 +12,7 @@
             </a>
             <h2 class="panel-main-title">
                 {{ $entry->get('title') }}
-                <small> by {{ $entry->getAuthorName() }} at {{ $entry->getCreatedTime() }}</small>
+                <small> Written by {{ $entry->getAuthorName() }} at {{ $entry->getCreatedTime() }}</small>
                 @if($entry->hasUpdated())
                     <small><i> last updated at {{ $entry->getUpdatedTime() }}</i></small>
                 @endif
@@ -21,16 +21,18 @@
         <div class="panel-body">
             <div class="media">
                 <div class="media-body">
-                    {{ App::getInstance()->container['markdown']->render(html_entity_decode(html_entity_decode($entry->get('content')))) }}
+                    {{ App::getInstance()->container['markdown']->render(html_entity_decode(html_entity_decode(html_entity_decode($entry->get('content'))))) }}
                 </div>
             </div>
         </div>
         <div class="panel-footer">
             <a href="{{ URL::site() }}" class="animated bounceInDown btn btn-primary"><i class="fa fa-home"></i> Get more toxic</a>
             @if(f('auth.allowed', '/update'))
-                @if($entry->get('$created_by') === $_SESSION['user']['$id'])
-                    <a href="{{ URL::current().'/update' }}" class="animated bounceInLeft btn btn-success"><i class="fa fa-edit"></i> Update</a>
-                    <a href="{{ URL::current().'/delete' }}" class="animated bounceInRight btn btn-warning"><i class="fa fa-trash-o"></i> Delete</a>
+                @if(isset($_SESSION['user']))
+                    @if($entry->get('$created_by') === $_SESSION['user']['$id'])
+                        <a href="{{ URL::current().'/update' }}" class="animated bounceInLeft btn btn-success"><i class="fa fa-edit"></i> Update</a>
+                        <a href="{{ URL::current().'/delete' }}" class="animated bounceInRight btn btn-warning"><i class="fa fa-trash-o"></i> Delete</a>
+                    @endif
                 @endif
             @endif
         </div>

@@ -20,12 +20,15 @@
                             <p>
                                 <small class="text-muted"><i class="fa fa-pencil"></i> By {{ $entry->getAuthorName() }}</small>
                                 <br>
-                                <small class="text-muted"><i class="fa fa-clock-o"></i> Writed {{ $entry->sinceNow() }}</small>
+                                <small class="text-muted"><i class="fa fa-clock-o"></i> Written {{ $entry->sinceNow() }}</small>
                                 @if($entry->hasUpdated())
                                     <br>
                                     <small class="text-muted"><i class="fa fa-check"></i>Last updated at {{ $entry->getUpdatedTime() }}</small>
                                 @endif
                             </p>
+                        </div>
+                        <div class="timeline-body">
+                            {{ $entry->overView() }}
                         </div>
                     </div>
                 </li>
