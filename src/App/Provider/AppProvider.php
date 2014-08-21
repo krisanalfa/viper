@@ -2,6 +2,7 @@
 
 use Bono\Provider\Provider;
 use Norm\Norm;
+use Exception;
 
 /**
  * Basic URI mapping that not handled by NormController
@@ -35,5 +36,14 @@ class AppProvider extends Provider
         $app->get('/about', function () use ($app) {
             $app->render('sites/about');
         });
+
+        if ($app->config('mode') === 'production') {
+
+            // TODO: Write error handling here
+            // $app->error(function (Exception $e) use ($app) {
+            //     $app->response->setStatus(500);
+            // });
+
+        }
     }
 }

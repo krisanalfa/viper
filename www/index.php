@@ -39,6 +39,7 @@ use Bono\App;
 // Create bulb application
 $app = new App(
     array(
-        'autorun' => true
+        'autorun' => true,
+        'mode' => 'production'
     )
 );

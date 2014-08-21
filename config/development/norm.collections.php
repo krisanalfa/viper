@@ -1,5 +1,7 @@
 <?php
 
+use Bono\App;
+
 return [
     'norm.collections' => [
         'default' => [
@@ -10,7 +12,7 @@ return [
         ],
         'resolvers' => [
             '\\Norm\\Resolver\\CollectionResolver' => [
-                'collections.path' => 'chunks/collections'
+                'collections.path' => App::getInstance()->config('mode').'/collections'
             ],
         ],
     ],

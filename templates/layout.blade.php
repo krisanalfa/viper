@@ -30,7 +30,9 @@
 <body>
     <!-- Notification area -->
     @section('notification')
-        {{ f('notification.show') }}
+        @if(function_exists('f'))
+            {{ f('notification.show') }}
+        @endif
     @show
 
     @section('navigator')
