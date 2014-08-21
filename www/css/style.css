@@ -142,3 +142,7 @@ h6 small {
 ul, ol {
     list-style-position: inside;
 }
+
+.new-toxic fieldset {
+    margin-bottom: 15px;
+}
