@@ -9,8 +9,8 @@ return [
         'KrisanAlfa\\Kraken\\Provider\\KrakenProvider',
         'App\\Provider\\AppProvider',
         'Bono\\Markdown\\Provider\\MarkdownProvider' => [
-            'gfm' => true, // default false
-            'partialTemplatePath' => dirname(dirname(__DIR__)).'/templates', // default is not set, using our own partials
+            'gfm' => true,
+            'partialTemplatePath' => dirname(dirname(__DIR__)).'/templates',
         ],
         'App\\Provider\\AuthRulesProvider',
     ],
