@@ -28,5 +28,8 @@
             "url": "https://github.com/krisanalfa/norm"
         }
     ],
+    "config": {
+        "preferred-install": "dist"
+    },
     "minimum_stability": "dev"
 }
