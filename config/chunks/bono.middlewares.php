@@ -14,8 +14,8 @@ return [
             'authUrl' => '/oauth/auth', // URI to access auth
             'tokenUrl' => '/oauth/token', // URI to get token
             'revokeUrl' => '/oauth/revoke', // URI to revoke auth
-            'clientId' => '53ea025b95e5b692058b4660.client.account.xinix.co.id',
-            'clientSecret' => '443e3061967c6e548800c22182e2fe3b',
+            'clientId' => '53ecda0795e5b6ce0f8b45b0.client.account.xinix.co.id',
+            'clientSecret' => '953d50c8ef5ac7abdb16d02c3df7b5ac',
             'redirectUri' => \Bono\Helper\URL::site('/login'), // application redirect url
             'scope' => 'user',
         ],

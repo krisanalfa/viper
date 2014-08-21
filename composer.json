@@ -11,12 +11,8 @@
         "krisanalfa/bono-kraken": "~0.0.2",
 
         "reekoheek/bono-auth": "dev-master",
-        "reekoheek/util": "dev-master",
-        "reekoheek/jsonkit": "dev-master",
 
         "nesbot/Carbon": "*",
-
-        "filp/whoops": "1.*",
 
         "ircmaxell/password-compat": "1.0.*"
     },
