@@ -27,9 +27,10 @@
     <!-- PAGE CONTENT -->
     <div class="error">
         <h1 class="text-center animated tada">
-            <i class="fa fa-warning fa-5x"></i>
+            <i class="fa fa-chain-broken fa-5x"></i>
         </h1>
-        <h1 class="text-center animated bounceInUp">Dafuq? <small>This is 500! Call the agency!</small></h1>
+        <h1 class="text-center animated bounceInUp">Yo, dawg! <small>I know it's hard for you to get what's exist, but try harder.</small></h1>
+        <h3 class="text-center animated bounceInDown">Click <a href="{{ URL::site('') }}">here</a> to go home.</h3>
     </div>
 
     <!-- REQUIRED SCRIPT -->

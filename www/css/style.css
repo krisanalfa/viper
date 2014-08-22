@@ -146,3 +146,11 @@ ul, ol {
 .new-toxic fieldset {
     margin-bottom: 15px;
 }
+
+small, small {
+    color:rgb(67, 74, 84) !important;
+}
+
+div.error {
+    padding-top: 50px;
+}

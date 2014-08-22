@@ -40,9 +40,17 @@ class AppProvider extends Provider
         if ($app->config('mode') === 'production') {
 
             // TODO: Write error handling here
-            // $app->error(function (Exception $e) use ($app) {
-            //     $app->response->setStatus(500);
-            // });
+            $app->error(function (Exception $e) use ($app) {
+                header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
+                echo($app->view->make('sites/error')->render());
+                $app->stop();
+            });
+
+            $app->notFound(function () use ($app) {
+                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not found', true, 404);
+                echo($app->view->make('sites/notFound')->render());
+                $app->stop();
+            });
 
         }
     }
