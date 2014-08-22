@@ -3,7 +3,7 @@
     <div class="row text-center">
         <img src="{{ URL::base('/assets/img/logo.png') }}" alt="" class="logo">
     </div>
-    <h1 class="text-center">VIPER <small style="color:rgb(67, 74, 84)">eVerything Is PERmitted</small></h1>
+    <h1 class="text-center">VIPER <small>eVerything Is PERmitted</small></h1>
 
     <blockquote>
         <p><i>
