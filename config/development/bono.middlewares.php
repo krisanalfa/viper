@@ -1,5 +1,7 @@
 <?php
 
+use Bono\Helper\URL;
+
 // BONO
 return [
     // The Middlewares
@@ -16,7 +18,7 @@ return [
             'revokeUrl' => '/oauth/revoke', // URI to revoke auth
             'clientId' => '53ecda0795e5b6ce0f8b45b0.client.account.xinix.co.id',
             'clientSecret' => '953d50c8ef5ac7abdb16d02c3df7b5ac',
-            'redirectUri' => \Bono\Helper\URL::site('/login'), // application redirect url
+            'redirectUri' => URL::site('/login'), // application redirect url
             'scope' => 'user',
         ],
         '\\Bono\\Middleware\\SessionMiddleware',

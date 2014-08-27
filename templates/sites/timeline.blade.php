@@ -16,7 +16,7 @@
                         <div class="timeline-heading">
                             <h4 class="timeline-title">
                                 @if($entry->get('slug'))
-                                    <a href="{{ URL::site('/read/'.$entry->get('slug')) }}"> {{ $entry->get('title') }}</a>
+                                    <a href="{{ URL::site('/'.$entry->get('slug')) }}"> {{ $entry->get('title') }}</a>
                                 @else
                                     <a href="{{ URL::site('/toxic/'.$entry->getId()) }}"> {{ $entry->get('title') }}</a>
                                 @endif

@@ -37,19 +37,9 @@ class AppProvider extends Provider
             $app->render('sites/about');
         });
 
-        $app->get('/read/:slug', function ($slug) use ($app) {
-            $toxic = Norm::factory('Toxic')->findOne(['slug' => $slug]);
-
-            if (is_null($toxic)) {
-                $app->notFound();
-            }
-
-            $app->render('toxic/read', ['entry' => $toxic]);
-        });
-
+        // Error handling
         if ($app->config('mode') === 'production') {
 
-            // TODO: Write error handling here
             $app->error(function (Exception $e) use ($app) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
                 echo($app->view->make('sites/error')->render());

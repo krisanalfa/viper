@@ -2,6 +2,7 @@
 
 use Bono\Provider\Provider;
 use Slim\Route;
+use Norm\Norm;
 
 class AuthRulesProvider extends Provider
 {
@@ -45,6 +46,22 @@ class AuthRulesProvider extends Provider
 
             return $options;
         }, 2);
+
+        $app->filter('auth.authorize', function ($options) use ($app) {
+            if (is_bool($options)) {
+                return $options;
+            }
+
+            $slug = str_replace('/', '', $app->request->getPathInfo());
+
+            $entry = Norm::factory('Toxic')->findOne(['slug' => $slug]);
+
+            if (!is_null($entry)) {
+                return true;
+            }
+
+            return $options;
+        }, 3);
     }
 
     protected function checkURL($uri, $request)

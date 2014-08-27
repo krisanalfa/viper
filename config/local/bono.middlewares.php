@@ -1,9 +1,12 @@
 <?php
 
+use Bono\Helper\URL;
+
 // BONO
 return [
     // The Middlewares
     'bono.middlewares' => [
+        '\\App\\Middleware\\ToxicMiddleware',
         '\\KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
         '\\Bono\\Middleware\\ContentNegotiatorMiddleware',
         '\\KrisanAlfa\\Theme\\Middleware\\NotificationMiddleware',
@@ -16,7 +19,7 @@ return [
             'revokeUrl' => '/oauth/revoke', // URI to revoke auth
             'clientId' => '53ea025b95e5b692058b4660.client.account.xinix.co.id',
             'clientSecret' => '443e3061967c6e548800c22182e2fe3b',
-            'redirectUri' => \Bono\Helper\URL::site('/login'), // application redirect url
+            'redirectUri' => URL::site('/login'), // application redirect url
             'scope' => 'user',
         ],
         '\\Bono\\Middleware\\SessionMiddleware',
