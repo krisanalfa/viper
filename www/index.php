@@ -40,6 +40,6 @@ use Bono\App;
 $app = new App(
     array(
         'autorun' => true,
-        'mode' => 'development'
+        'mode' => 'local'
     )
 );
