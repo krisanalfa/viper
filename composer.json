@@ -5,6 +5,9 @@
         "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
 
+        "filp/whoops": "dev-master",
+        "reekoheek/util": ">=0.1.2",
+
         "krisanalfa/bono-markdown": "~0.0.2",
         "krisanalfa/bono-blade": "~0.7.2",
         "krisanalfa/blade-theme": "~0.4.6",
