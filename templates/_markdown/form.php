@@ -76,5 +76,7 @@
         if (! $('#preview-'+"<?php echo $id ?>"+' table').closest('div').hasClass('table-responsive')) {
             $('#preview-'+"<?php echo $id ?>"+' table').wrap('<div class="table-responsive"></div>');
         }
+
+        $('#preview pre').addClass('pre-scrollable');
     }
 </script>

@@ -4,6 +4,9 @@
 @endsection
 
 @section('content')
+<script type="text/markdown">
+{{ html_entity_decode(html_entity_decode(html_entity_decode($entry->get('content')))) }}
+</script>
 <div class="container toxic-wrapper">
     <div class="panel panel-default animated bounceInUp">
         <div class="panel-heading">
@@ -21,7 +24,6 @@
         <div class="panel-body">
             <div class="media">
                 <div class="media-body">
-                    {{ App::getInstance()->container['markdown']->render(html_entity_decode(html_entity_decode(html_entity_decode($entry->get('content'))))) }}
                 </div>
             </div>
         </div>
@@ -41,9 +43,33 @@
 @endsection
 
 @section('injector')
+<script src="{{ Theme::base('vendor/js/marked.min.js') }}"></script>
 <script>
     $(document).ready(function() {
         prettyPrint();
     });
+
+    marked.setOptions({
+        highlight: function (code, lang) {
+            // Fix for HTML code block
+            if (lang === 'html') {
+                code = $('<div />').text(code).html();
+            }
+
+            return prettyPrintOne(code, lang, false);
+        },
+        gfm: true,
+        tables: true
+    });
+
+    $('.media-body').append(marked($('script[type="text/markdown"]').text()));
+
+    $('table').addClass('table table-striped table-bordered table-hover table-condensed');
+
+    if (! $('table').closest('div').hasClass('table-responsive')) {
+        $('table').wrap('<div class="table-responsive"></div>');
+    }
+
+    $('pre').addClass('pre-scrollable');
 </script>
 @endsection
