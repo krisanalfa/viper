@@ -30,8 +30,8 @@
             @if(f('auth.allowed', '/update'))
                 @if(isset($_SESSION['user']))
                     @if($entry->get('$created_by') === $_SESSION['user']['$id'])
-                        <a href="{{ URL::current().'/update' }}" class="animated bounceInLeft btn btn-success"><i class="fa fa-edit"></i> Update</a>
-                        <a href="{{ URL::current().'/delete' }}" class="animated bounceInRight btn btn-warning"><i class="fa fa-trash-o"></i> Delete</a>
+                        <a href="{{ URL::site('/toxic/'.$entry->getId().'/update') }}" class="animated bounceInLeft btn btn-success"><i class="fa fa-edit"></i> Update</a>
+                        <a href="{{ URL::site('/toxic/'.$entry->getId().'/delete') }}" class="animated bounceInRight btn btn-warning"><i class="fa fa-trash-o"></i> Delete</a>
                     @endif
                 @endif
             @endif
