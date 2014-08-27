@@ -13,5 +13,6 @@ return [
     'schema' => [
         'title'    => String::create('title')->filter('required'),
         'content'  => Markdown::create('content')->filter('required'),
+        'slug'     => String::create('slug')->filter('trim'),
     ],
 ];
