@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a1dbbc210a65f6e2d097386adeaa7204",
+    "hash": "cb43cb3b0ae1286d292d9e18b2e5917e",
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "dev-master",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "e0389cda4e3d258a7b4abee00234413912032055"
+                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/e0389cda4e3d258a7b4abee00234413912032055",
-                "reference": "e0389cda4e3d258a7b4abee00234413912032055",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/9f451fbc7b8cad5e71300672c340c28c6bec09ff",
+                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-08-15 20:57:03"
+            "time": "2014-07-11 05:56:54"
         },
         {
             "name": "guzzle/guzzle",
@@ -725,6 +725,48 @@
             "time": "2014-08-08 12:59:22"
         },
         {
+            "name": "reekoheek/jsonkit",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reekoheek/php-jsonkit.git",
+                "reference": "fc7769ba88af09be6cf7087ff1736ad1002b3b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reekoheek/php-jsonkit/zipball/fc7769ba88af09be6cf7087ff1736ad1002b3b75",
+                "reference": "fc7769ba88af09be6cf7087ff1736ad1002b3b75",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.22"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonKit": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Apriyanto Pramana Putra",
+                    "email": "apriantopramanaputra@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-06-02 13:46:37"
+        },
+        {
             "name": "reekoheek/util",
             "version": "0.1.2",
             "source": {
@@ -1132,7 +1174,6 @@
     "stability-flags": {
         "xinix-technology/norm": 20,
         "xinix-technology/bono": 20,
-        "filp/whoops": 20,
         "reekoheek/bono-auth": 20
     },
     "prefer-stable": false,
