@@ -22,10 +22,12 @@
                     <fieldset>
                         <legend>{{ f('controller')->clazz }} Update</legend>
                         @foreach(f('controller')->schema() as $name => $field)
-                            <div class="form-group">
-                                {{ $field->label() }}
-                                {{ $field->formatInput(@$entry[$name], $entry) }}
-                            </div>
+                            @if(!$field->get('generated'))
+                                <div class="form-group">
+                                    {{ $field->label() }}
+                                    {{ $field->formatInput(@$entry[$name], $entry) }}
+                                </div>
+                            @endif
                         @endforeach
 
                         <input type="submit" value="Save" class="btn btn-primary">

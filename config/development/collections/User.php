@@ -15,5 +15,6 @@ return [
         'first_name'  => String::create('first_name')->filter('trim|required'),
         'last_name'   => String::create('last_name')->filter('trim|required'),
         'birth_place' => String::create('birth_place')->filter('trim|required'),
+        'gravatar'    => String::create('gravatar')->filter('trim')->set('generated', true),
     ],
 ];

@@ -37,9 +37,7 @@ require '../vendor/autoload.php';
 use Bono\App;
 
 // Create bulb application
-$app = new App(
-    array(
-        'autorun' => true,
-        'mode' => 'production'
-    )
-);
+$app = new App([
+    'autorun' => true,
+    'mode' => 'production'
+]);

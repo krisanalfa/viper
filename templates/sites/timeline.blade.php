@@ -15,7 +15,11 @@
                     <div class="timeline-panel animated bounceInUp">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">
-                                <a href="{{ URL::site('/toxic/'.$entry->getId()) }}"> {{ $entry->get('title') }}</a>
+                                @if($entry->get('slug'))
+                                    <a href="{{ URL::site('/read/'.$entry->get('slug')) }}"> {{ $entry->get('title') }}</a>
+                                @else
+                                    <a href="{{ URL::site('/toxic/'.$entry->getId()) }}"> {{ $entry->get('title') }}</a>
+                                @endif
                             </h4>
                             <p>
                                 <small class="text-muted"><i class="fa fa-pencil"></i> By {{ $entry->getAuthorName() }}</small>

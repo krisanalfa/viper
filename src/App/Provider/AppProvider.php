@@ -37,6 +37,16 @@ class AppProvider extends Provider
             $app->render('sites/about');
         });
 
+        $app->get('/read/:slug', function ($slug) use ($app) {
+            $toxic = Norm::factory('Toxic')->findOne(['slug' => $slug]);
+
+            if (is_null($toxic)) {
+                $app->notFound();
+            }
+
+            $app->render('toxic/read', ['entry' => $toxic]);
+        });
+
         if ($app->config('mode') === 'production') {
 
             // TODO: Write error handling here
