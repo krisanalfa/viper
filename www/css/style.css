@@ -155,3 +155,12 @@ small, small {
 div.error {
     padding-top: 50px;
 }
+
+pre {
+    overflow-x: auto;
+}
+
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
+}

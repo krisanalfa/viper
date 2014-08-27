@@ -74,6 +74,7 @@
     <script>
         // grab an element
         var myElement = document.querySelector("header");
+
         // construct an instance of Headroom, passing the element
         var headroom  = new Headroom(myElement, {
             tolerance : {
@@ -81,13 +82,17 @@
                 down : 5
             },
         });
+
         // initialise
         headroom.init();
+
         $('table').addClass('table table-striped table-bordered table-hover table-condensed');
 
         if (! $('table').closest('div').hasClass('table-responsive')) {
             $('table').wrap('<div class="table-responsive"></div>');
         }
+
+        $('pre').addClass('pre-scrollable');
     </script>
 
     <!-- PAGE LEVEL SCRIPT -->
