@@ -162,5 +162,6 @@ pre {
 
 pre code {
     overflow-wrap: normal;
+    word-wrap: normal;
     white-space: pre;
 }
