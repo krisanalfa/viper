@@ -4,8 +4,66 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f7e18246bd8e082864e63cf7a90f1190",
+    "hash": "a1dbbc210a65f6e2d097386adeaa7204",
     "packages": [
+        {
+            "name": "filp/whoops",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "e0389cda4e3d258a7b4abee00234413912032055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/e0389cda4e3d258a7b4abee00234413912032055",
+                "reference": "e0389cda4e3d258a7b4abee00234413912032055",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Whoops": "src/"
+                },
+                "classmap": [
+                    "src/deprecated"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "silex-provider",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2014-08-15 20:57:03"
+        },
         {
             "name": "guzzle/guzzle",
             "version": "v3.8.1",
@@ -667,6 +725,41 @@
             "time": "2014-08-08 12:59:22"
         },
         {
+            "name": "reekoheek/util",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reekoheek/php-util.git",
+                "reference": "62d2608bb4530efcf8f68b2de8bb6af0820f1fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reekoheek/php-util/zipball/62d2608bb4530efcf8f68b2de8bb6af0820f1fa0",
+                "reference": "62d2608bb4530efcf8f68b2de8bb6af0820f1fa0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ROH\\Util": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP util library",
+            "time": "2014-01-02 04:08:44"
+        },
+        {
             "name": "slim/slim",
             "version": "2.3.5",
             "source": {
@@ -1039,6 +1132,7 @@
     "stability-flags": {
         "xinix-technology/norm": 20,
         "xinix-technology/bono": 20,
+        "filp/whoops": 20,
         "reekoheek/bono-auth": 20
     },
     "prefer-stable": false,
