@@ -18,7 +18,9 @@ class Toxic extends Model
         $user = Norm::factory('User')->findOne($this->get('$created_by'));
 
         if ($user) {
-            $image = $user->get('username').'.jpeg';
+            $image = $user->get('gravatar');
+
+            return ($image) ? $image : 'logo.png';
         }
 
         return $image;
