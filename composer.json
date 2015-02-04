@@ -1,57 +1,23 @@
 {
-    "name": "krisanalfa/viper-arch",
-    "description": "Viper Archetype",
     "require": {
-        "xinix-technology/norm": "dev-master",
         "xinix-technology/bono": "dev-master",
-
-        "filp/whoops": "1.*",
-        "reekoheek/util": ">=0.1.2",
-        "reekoheek/jsonkit": "~0.0.1",
-
-        "krisanalfa/bono-markdown": "~0.0.2",
-        "krisanalfa/bono-blade": "~0.7.2",
-        "krisanalfa/blade-theme": "~0.4.6",
-        "krisanalfa/bono-kraken": "~0.0.2",
+        "xinix-technology/norm": "dev-master",
 
         "reekoheek/bono-auth": "dev-master",
 
-        "nesbot/Carbon": "*",
+        "krisanalfa/bono-blade": "dev-master",
+        "krisanalfa/bono-kraken": "dev-master",
+        "krisanalfa/bono-markdown": "dev-master",
+        "krisanalfa/blade-theme": "dev-master",
 
-        "ircmaxell/password-compat": "1.0.*"
+        "nesbot/Carbon": "dev-master",
+
+        "ircmaxell/password-compat": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "App": "src/",
-            "KrisanAlfa\\Theme": "vendor/krisanalfa/blade-theme/src"
+            "App": "src/"
         }
-    },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "xinix-technology/bono",
-                "version": "dev-master",
-                "dist": {
-                    "url": "https://github.com/krisanalfa/bono/archive/master.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "xinix-technology/norm",
-                "version": "dev-master",
-                "dist": {
-                    "url": "https://github.com/krisanalfa/norm/archive/master.zip",
-                    "type": "zip"
-                }
-            }
-        }
-    ],
-    "config": {
-        "preferred-install": "dist"
     },
     "minimum_stability": "dev"
 }

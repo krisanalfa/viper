@@ -1,5 +1,7 @@
+@extends('layout')
+
 @section('title')
-{{ f('controller')->clazz }} Create
+{{ f('controller')->getClass() }} Create
 @endsection
 
 @section('content')
@@ -17,7 +19,7 @@
             <div class="form-wrapper">
                 <form role="form" method="post">
                     <fieldset>
-                        <legend>Create new {{ f('controller')->clazz }}</legend>
+                        <legend>Create new {{ f('controller')->getClass() }}</legend>
                         @foreach(f('controller')->schema() as $name => $field)
                             <div class="form-group">
                                 {{ $field->label() }}

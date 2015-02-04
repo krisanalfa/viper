@@ -1,3 +1,5 @@
+@extends('layout')
+
 @section('content')
 <div class="container toxic-wrapper">
     <div class="row text-center">

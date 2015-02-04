@@ -1,5 +1,7 @@
+@extends('layout')
+
 @section('title')
-{{ f('controller')->clazz }} List
+{{ f('controller')->getClass() }} List
 @endsection
 
 @section('content')

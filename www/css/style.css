@@ -1,8 +1,18 @@
 html, body {
     background-color: #D8F3FD;
     font-family: 'Lato';
-    font-size: 15px;
     height: 100%;
+    max-width: 100%;
+    font-size: 17px;
+}
+
+.avatar {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
 }
 
 legend {
@@ -27,6 +37,8 @@ legend {
     .toxic-wrapper {
         padding-top: 30px;
         margin-bottom: 30px;
+        padding-right: 100px;
+        padding-left: 100px;
     }
 }
 

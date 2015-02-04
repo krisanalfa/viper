@@ -39,7 +39,11 @@ use Bono\App;
 // Create bulb application
 $app = new App(
     array(
-        'autorun' => true,
-        'mode' => 'local'
+        'autorun'    => false,
+        'mode'       => 'development',
+        'debug'      => true,
+        'bono.debug' => true,
     )
 );
+
+$app->run();

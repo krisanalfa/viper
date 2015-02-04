@@ -1,5 +1,7 @@
+@extends('layout')
+
 @section('title')
-{{ f('controller')->clazz }} Create
+{{ f('controller')->getClass() }} Create
 @endsection
 
 @section('content')
@@ -17,7 +19,7 @@
             <div class="form-wrapper">
                 <form role="form" method="POST">
                     <fieldset>
-                        <legend>{{ f('controller')->clazz }} Deletion</legend>
+                        <legend>{{ f('controller')->getClass() }} Deletion</legend>
                         <div class="form-group">
                             <p>Are you sure?</p>
                         </div>

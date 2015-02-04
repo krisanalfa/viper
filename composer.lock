@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb43cb3b0ae1286d292d9e18b2e5917e",
+    "hash": "71993015ff525ea361c99851c3faa741",
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff"
+                "reference": "a85fab9a98f1f9b8ebcdbe71733f0d910e5b9adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/9f451fbc7b8cad5e71300672c340c28c6bec09ff",
-                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a85fab9a98f1f9b8ebcdbe71733f0d910e5b9adf",
+                "reference": "a85fab9a98f1f9b8ebcdbe71733f0d910e5b9adf",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-07-11 05:56:54"
+            "time": "2014-10-26 09:05:09"
         },
         {
             "name": "guzzle/guzzle",
@@ -404,17 +404,20 @@
         },
         {
             "name": "ircmaxell/password-compat",
-            "version": "1.0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ircmaxell/password_compat.git",
-                "reference": "1fc1521b5e9794ea77e4eca30717be9635f1d4f4"
+                "reference": "de01fa521702990ed066446f2931914272336444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/1fc1521b5e9794ea77e4eca30717be9635f1d4f4",
-                "reference": "1fc1521b5e9794ea77e4eca30717be9635f1d4f4",
+                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/de01fa521702990ed066446f2931914272336444",
+                "reference": "de01fa521702990ed066446f2931914272336444",
                 "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "autoload": {
@@ -439,29 +442,29 @@
                 "hashing",
                 "password"
             ],
-            "time": "2013-04-30 19:58:08"
+            "time": "2015-01-09 18:38:25"
         },
         {
             "name": "krisanalfa/blade-theme",
-            "version": "0.4.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krisanalfa/blade-theme.git",
-                "reference": "849d050e23148aeceb1fb86b26bda5225ae86a20"
+                "reference": "63ed50fd60fd66b46d50625205028d9b001cbe0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krisanalfa/blade-theme/zipball/849d050e23148aeceb1fb86b26bda5225ae86a20",
-                "reference": "849d050e23148aeceb1fb86b26bda5225ae86a20",
+                "url": "https://api.github.com/repos/krisanalfa/blade-theme/zipball/63ed50fd60fd66b46d50625205028d9b001cbe0c",
+                "reference": "63ed50fd60fd66b46d50625205028d9b001cbe0c",
                 "shasum": ""
             },
             "require": {
-                "krisanalfa/bono-blade": "0.7.*"
+                "krisanalfa/bono-blade": ">=0.8.3"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "KrisanAlfa\\Theme\\BladeTheme": "src"
+                    "KrisanAlfa\\Theme": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -471,26 +474,24 @@
             "authors": [
                 {
                     "name": "Krisan Alfa Timur",
-                    "email": "krisan47@gmail.com",
-                    "homepage": "https://twitter.com/krisanalfa",
-                    "role": "Developer"
+                    "email": "krisan47@gmail.com"
                 }
             ],
             "description": "Basic Blade Theme Resolver Class",
-            "time": "2014-07-11 12:55:20"
+            "time": "2014-10-31 07:07:44"
         },
         {
             "name": "krisanalfa/bono-blade",
-            "version": "0.7.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krisanalfa/bono-blade.git",
-                "reference": "feaaedf80f0aff0e42a0daa9dd7755bcc0592b2c"
+                "reference": "913088b3f7165044c0fc7045c5fe0468acbcbb29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krisanalfa/bono-blade/zipball/feaaedf80f0aff0e42a0daa9dd7755bcc0592b2c",
-                "reference": "feaaedf80f0aff0e42a0daa9dd7755bcc0592b2c",
+                "url": "https://api.github.com/repos/krisanalfa/bono-blade/zipball/913088b3f7165044c0fc7045c5fe0468acbcbb29",
+                "reference": "913088b3f7165044c0fc7045c5fe0468acbcbb29",
                 "shasum": ""
             },
             "require": {
@@ -509,26 +510,24 @@
             "authors": [
                 {
                     "name": "Krisan Alfa Timur",
-                    "email": "krisan47@gmail.com",
-                    "homepage": "https://twitter.com/krisanalfa",
-                    "role": "Developer"
+                    "email": "krisan47@gmail.com"
                 }
             ],
             "description": "Laravel Blade template engine for Bono PHP Framework",
-            "time": "2014-06-27 14:56:37"
+            "time": "2014-10-31 07:08:33"
         },
         {
             "name": "krisanalfa/bono-kraken",
-            "version": "0.0.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krisanalfa/bono-kraken.git",
-                "reference": "dfae8c191716b87528a97b66014774e3683a646d"
+                "reference": "4ae997947271aa9eaf2bef2a3c78d4d563bc530b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krisanalfa/bono-kraken/zipball/dfae8c191716b87528a97b66014774e3683a646d",
-                "reference": "dfae8c191716b87528a97b66014774e3683a646d",
+                "url": "https://api.github.com/repos/krisanalfa/bono-kraken/zipball/4ae997947271aa9eaf2bef2a3c78d4d563bc530b",
+                "reference": "4ae997947271aa9eaf2bef2a3c78d4d563bc530b",
                 "shasum": ""
             },
             "type": "library",
@@ -548,11 +547,11 @@
                 }
             ],
             "description": "Dependency Injection Container for Bono PHP Framework",
-            "time": "2014-08-26 08:38:25"
+            "time": "2014-11-19 10:22:02"
         },
         {
             "name": "krisanalfa/bono-markdown",
-            "version": "0.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krisanalfa/bono-markdown.git",
@@ -643,16 +642,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.11.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "2b60366be6dcb9f9cd3e244ab25eb98eaea99551"
+                "reference": "6ed6c63f592b3adf2298f2ddc241db6b9191ad59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2b60366be6dcb9f9cd3e244ab25eb98eaea99551",
-                "reference": "2b60366be6dcb9f9cd3e244ab25eb98eaea99551",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6ed6c63f592b3adf2298f2ddc241db6b9191ad59",
+                "reference": "6ed6c63f592b3adf2298f2ddc241db6b9191ad59",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +684,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2014-08-26 03:18:44"
+            "time": "2014-10-01 01:04:30"
         },
         {
             "name": "reekoheek/bono-auth",
@@ -693,12 +692,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "bb8dacd365bf05d0437c4b1b449ccb02e9ac9faf"
+                "reference": "d384f8a3a01f46166bae2d49087eda3d0bc6824f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/bb8dacd365bf05d0437c4b1b449ccb02e9ac9faf",
-                "reference": "bb8dacd365bf05d0437c4b1b449ccb02e9ac9faf",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/d384f8a3a01f46166bae2d49087eda3d0bc6824f",
+                "reference": "d384f8a3a01f46166bae2d49087eda3d0bc6824f",
                 "shasum": ""
             },
             "require": {
@@ -722,7 +721,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-08-08 12:59:22"
+            "time": "2014-11-03 09:40:26"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -802,6 +801,72 @@
             "time": "2014-01-02 04:08:44"
         },
         {
+            "name": "rhumsaa/uuid",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "cca98c652cac412c9c2f109c69e5532f313435fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/cca98c652cac412c9c2f109c69e5532f313435fc",
+                "reference": "cca98c652cac412c9c2f109c69e5532f313435fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "doctrine/dbal": ">=2.3",
+                "moontoast/math": "~1.1",
+                "phpunit/phpunit": "~4.1",
+                "satooshi/php-coveralls": "~0.6",
+                "symfony/console": "~2.3"
+            },
+            "suggest": {
+                "doctrine/dbal": "Allow the use of a UUID as doctrine field type.",
+                "moontoast/math": "Support for converting UUID to 128-bit integer (in string form).",
+                "symfony/console": "Support for use of the bin/uuid command line tool."
+            },
+            "bin": [
+                "bin/uuid"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rhumsaa\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Huizendveld",
+                    "email": "marijn.huizendveld@gmail.com"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "homepage": "http://benramsey.com"
+                }
+            ],
+            "description": "A PHP 5.3+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
+            "homepage": "https://github.com/ramsey/uuid",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "time": "2014-11-09 18:42:56"
+        },
+        {
             "name": "slim/slim",
             "version": "2.3.5",
             "source": {
@@ -847,17 +912,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.4.8",
+            "version": "v2.4.10",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "29ef7af8aa6e3c015445f34291ccab9b8019085b"
+                "reference": "39dd1c85ffdfc3c5fb008019dd027af05f64ec36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/29ef7af8aa6e3c015445f34291ccab9b8019085b",
-                "reference": "29ef7af8aa6e3c015445f34291ccab9b8019085b",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/39dd1c85ffdfc3c5fb008019dd027af05f64ec36",
+                "reference": "39dd1c85ffdfc3c5fb008019dd027af05f64ec36",
                 "shasum": ""
             },
             "require": {
@@ -886,33 +951,31 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-09 12:44:38"
+            "time": "2014-09-22 08:51:05"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.5.3",
+            "version": "v2.6.4",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b"
+                "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f75989f3ab2743a82fe0b03ded2598a2b1546813",
+                "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813",
                 "shasum": ""
             },
             "require": {
@@ -920,9 +983,10 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.0",
-                "symfony/stopwatch": "~2.2"
+                "symfony/config": "~2.0,>=2.0.5",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
+                "symfony/stopwatch": "~2.3"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -931,7 +995,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -955,21 +1019,21 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:46"
+            "time": "2015-02-01 16:10:57"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.8",
+            "version": "v2.4.10",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "b495517531feb9f27c35991d0ed606ffb210faea"
+                "reference": "cd03920154bc6669f64fbabb803d24cc8629964c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/b495517531feb9f27c35991d0ed606ffb210faea",
-                "reference": "b495517531feb9f27c35991d0ed606ffb210faea",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/cd03920154bc6669f64fbabb803d24cc8629964c",
+                "reference": "cd03920154bc6669f64fbabb803d24cc8629964c",
                 "shasum": ""
             },
             "require": {
@@ -992,33 +1056,31 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-15 14:07:10"
+            "time": "2014-09-27 08:35:25"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v2.4.8",
+            "version": "v2.4.10",
             "target-dir": "Symfony/Component/OptionsResolver",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/OptionsResolver.git",
-                "reference": "6ac54d42397de6e9cbb9d41ca426cd0d5fc419db"
+                "reference": "45f5e4f9b49eef5d88d68fbd36dbf27023283e44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/6ac54d42397de6e9cbb9d41ca426cd0d5fc419db",
-                "reference": "6ac54d42397de6e9cbb9d41ca426cd0d5fc419db",
+                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/45f5e4f9b49eef5d88d68fbd36dbf27023283e44",
+                "reference": "45f5e4f9b49eef5d88d68fbd36dbf27023283e44",
                 "shasum": ""
             },
             "require": {
@@ -1041,14 +1103,12 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony OptionsResolver Component",
@@ -1058,21 +1118,27 @@
                 "configuration",
                 "options"
             ],
-            "time": "2014-07-09 09:04:55"
+            "time": "2014-09-22 08:51:05"
         },
         {
             "name": "xinix-technology/bono",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/krisanalfa/bono.git",
-                "reference": "2e5449520cb148225e3787491aa5a71c87908005"
+                "url": "https://github.com/xinix-technology/bono.git",
+                "reference": "6f9b0eb9bdb644069571608f173d09a66ff4c95f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krisanalfa/bono/zipball/2e5449520cb148225e3787491aa5a71c87908005",
-                "reference": "2e5449520cb148225e3787491aa5a71c87908005",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/6f9b0eb9bdb644069571608f173d09a66ff4c95f",
+                "reference": "6f9b0eb9bdb644069571608f173d09a66ff4c95f",
                 "shasum": ""
+            },
+            "require": {
+                "filp/whoops": "1.*",
+                "reekoheek/util": ">=0.1.2",
+                "slim/slim": "2.3.*",
+                "xinix-technology/norm": "*"
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "2.*",
@@ -1084,6 +1150,7 @@
                     "Bono": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1092,6 +1159,11 @@
                     "name": "Ganesha",
                     "email": "reekoheek@gmail.com",
                     "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nur Alam",
+                    "email": "rhoe.coder@gmail.com",
                     "role": "Developer"
                 },
                 {
@@ -1104,33 +1176,31 @@
                     "name": "Aprianto Pramana Putra",
                     "email": "apriantopramanaputra@gmail.com",
                     "role": "Developer"
-                },
-                {
-                    "name": "Nur Alam",
-                    "email": "rhoe.coder@gmail.com",
-                    "role": "Developer"
                 }
             ],
-            "support": {
-                "source": "https://github.com/krisanalfa/bono/tree/master"
-            },
-            "time": "2014-06-13 11:14:57"
+            "time": "2014-12-10 09:34:53"
         },
         {
             "name": "xinix-technology/norm",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/krisanalfa/norm.git",
-                "reference": "e96d5d7ac9884e078109532a17fcc3270a0ffda2"
+                "url": "https://github.com/xinix-technology/norm.git",
+                "reference": "1bc19c986e6391bc8b152e660e46fcb6545eb7dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krisanalfa/norm/zipball/e96d5d7ac9884e078109532a17fcc3270a0ffda2",
-                "reference": "e96d5d7ac9884e078109532a17fcc3270a0ffda2",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/1bc19c986e6391bc8b152e660e46fcb6545eb7dd",
+                "reference": "1bc19c986e6391bc8b152e660e46fcb6545eb7dd",
                 "shasum": ""
             },
+            "require": {
+                "reekoheek/jsonkit": "~0.0.1",
+                "reekoheek/util": "~0.1.2",
+                "rhumsaa/uuid": "~2.7"
+            },
             "require-dev": {
+                "guzzle/guzzle": "~3.8.1",
                 "phpdocumentor/phpdocumentor": "2.*",
                 "phpunit/phpunit": "3.7.22"
             },
@@ -1140,6 +1210,7 @@
                     "Norm": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1162,21 +1233,25 @@
                     "role": "Developer"
                 }
             ],
-            "support": {
-                "source": "https://github.com/krisanalfa/norm/tree/master"
-            },
-            "time": "2014-07-04 09:28:26"
+            "time": "2015-01-26 08:50:13"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "xinix-technology/norm": 20,
         "xinix-technology/bono": 20,
-        "reekoheek/bono-auth": 20
+        "xinix-technology/norm": 20,
+        "reekoheek/bono-auth": 20,
+        "krisanalfa/bono-blade": 20,
+        "krisanalfa/bono-kraken": 20,
+        "krisanalfa/bono-markdown": 20,
+        "krisanalfa/blade-theme": 20,
+        "nesbot/carbon": 20,
+        "ircmaxell/password-compat": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }

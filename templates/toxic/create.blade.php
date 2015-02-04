@@ -1,3 +1,5 @@
+@extends('layout')
+
 @section('styler')
 @include('components.markdown-head')
 
@@ -9,17 +11,19 @@
 @endsection
 
 @section('title')
-{{ f('controller')->clazz }} Create
+{{ f('controller')->getClass() }} Create
 @endsection
 
 @section('content')
 <form action="" role="form" method="POST" class="new-toxic container">
     <fieldset>
-        <legend>Create new {{ f('controller')->clazz }}</legend>
+        <legend>Create new {{ f('controller')->getClass() }}</legend>
         @foreach(f('controller')->schema() as $name => $field)
+            @if (! $field->get('hidden'))
             <div class="form-group">
                 {{ $field->formatInput(@$entry[$name], $entry) }}
             </div>
+            @endif
         @endforeach
 
         <input type="submit" value="Save" class="btn btn-primary">

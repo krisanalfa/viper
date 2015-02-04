@@ -1,6 +1,8 @@
+@extends('layout')
+
 @section('notification')
 <div style="margin-top: 30px">
-    {{ f('notification.show') }}
+    {{-- f('notification.show') --}}
 </div>
 @endsection
 
@@ -14,7 +16,7 @@
 
             <div style="margin-top: 10px">
                 <a href="javascript:history.back()" class="btn btn-default btn-sm">Back</a>
-                <a href="{{ URL::site('/login').'?!continue='.\Bono\Helper\URL::redirect() }}" class="btn btn-primary btn-sm">Login</a>
+                <a href="{{ URL::site('/login').'?!continue='.URL::redirect() }}" class="btn btn-primary btn-sm">Login</a>
             </div>
         </div>
     </div>

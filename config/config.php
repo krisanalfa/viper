@@ -1,17 +1,14 @@
 <?php
 
-use Bono\App;
-
-$cfg  = [];
-$path = __DIR__ . DIRECTORY_SEPARATOR . App::getInstance()->config('mode');
+$cfg  = array();
+$path = __DIR__ . DIRECTORY_SEPARATOR . 'chunks';
 
 if ($handle = opendir($path)) {
     while (false !== ($entry = readdir($handle))) {
-        $pathToFile = $path . DIRECTORY_SEPARATOR . $entry;
-
-        if (is_file($pathToFile)) {
-            $content = require_once($pathToFile);
-            $cfg     = array_merge_recursive($cfg, $content);
+        if (! in_array($entry, array('.', '..'))) {
+            if (is_readable($pathToFile = $path . DIRECTORY_SEPARATOR . $entry)) {
+                if (is_array($content = require_once $pathToFile)) { $cfg = array_merge_recursive($cfg, $content); }
+            }
         }
     }
 

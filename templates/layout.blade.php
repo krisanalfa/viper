@@ -1,12 +1,13 @@
-<?php use Bono\Helper\URL; ?>
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>@yield('title', 'Viper')</title>
 
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -30,9 +31,7 @@
 <body>
     <!-- Notification area -->
     @section('notification')
-        @if(function_exists('f'))
-            {{ f('notification.show') }}
-        @endif
+        {{-- f('notification.show') --}}
     @show
 
     @section('navigator')
