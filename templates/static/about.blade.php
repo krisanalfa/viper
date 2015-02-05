@@ -17,11 +17,10 @@
 
 <div class="container">
     <p class="text-center">
-        A new way to writing, inspired from Subhan Toba. So people now can write
-        what is in their mind via a fun and fast blogging-like system.
+        A new way to writing, inspired from <a href="https://twitter.com/nyenius" target="_blank">Subhan Toba</a>. So people now can write what is in their mind via a fun and fast blogging-like system.
         <br />
         <br />
-        Our philosophy is to <b>create a simple blog management system, which you can feel happy when you write some text line by line</b>.
+        Our philosophy is to <b>create a simple blog management system, which you can feel happy when you write down your ideas line by line</b>.
         <br />
         <br />
         If you want to contribute to this project, you can follow this project via <a taget="_blank" href="https://github.com/krisanalfa/viper">GitHub</a>.

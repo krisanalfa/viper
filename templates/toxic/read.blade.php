@@ -108,10 +108,11 @@
         {
             var panelHeight = $('.panel-heading').height(),
                 avatarHeight = $('.avatar').height(),
-                marginTop = (panelHeight - avatarHeight) / 2;
+                marginTop = ((panelHeight - avatarHeight) / 2) - 5;
 
-            $('.avatar').css('margin-top', marginTop+'px');
-            $('.avatar').show();
+            setTimeout(function() {
+                $('.avatar').show();
+            }, $('.avatar').css('margin-top', marginTop+'px'));
         }
 
         $(window).resize(function() {

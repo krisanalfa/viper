@@ -24,20 +24,6 @@ class AppProvider extends Provider
     {
         $app = $this->app;
 
-        // When application get request to '/' path
-        $app->get('/', function () use ($app) {
-            $entries = Norm::factory('Toxic')->find()->sort(['_created_time' => -1]);
-
-            $app->render('sites/timeline', [
-                'entries' => $entries,
-            ]);
-        });
-
-        // When application get request to '/about' path
-        $app->get('/about', function () use ($app) {
-            $app->render('sites/about');
-        });
-
         if ($app->config('mode') === 'production') {
             // Error handling
             $app->error(function (Exception $e) use ($app) {

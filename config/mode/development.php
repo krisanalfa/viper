@@ -14,6 +14,8 @@ return [
 
         'Bono\\Middleware\\ContentNegotiatorMiddleware',
 
+        'Bono\\Middleware\\StaticPageMiddleware',
+
         'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => [
             'driver'       => 'ROH\\BonoAuth\\Driver\\OAuth',
             'baseUrl'      => 'https://account.app.xinix.co.id/index.php',
