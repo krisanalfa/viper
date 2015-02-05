@@ -11,6 +11,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
+    @yield('meta')
+
     <link type="image/x-icon" href="{{ Theme::base('img/favicon.ico') }}" rel="Shortcut icon" />
 
     <link rel="stylesheet" href="{{ Theme::base('vendor/css/bootstrap.min.css') }}">
@@ -31,7 +33,7 @@
 <body>
     <!-- Notification area -->
     @section('notification')
-        {{-- f('notification.show') --}}
+        {{ f('notification.show') }}
     @show
 
     @section('navigator')

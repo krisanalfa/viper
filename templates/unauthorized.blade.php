@@ -2,7 +2,7 @@
 
 @section('notification')
 <div style="margin-top: 30px">
-    {{-- f('notification.show') --}}
+    {{ f('notification.show') }}
 </div>
 @endsection
 

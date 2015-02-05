@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "71993015ff525ea361c99851c3faa741",
+    "hash": "9c2cc649dc353ac0e50fb2d4efbd4664",
     "packages": [
         {
             "name": "filp/whoops",
@@ -408,12 +408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ircmaxell/password_compat.git",
-                "reference": "de01fa521702990ed066446f2931914272336444"
+                "reference": "c859f7c11ef51f3a7bc5527b3df3f3830b620b0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/de01fa521702990ed066446f2931914272336444",
-                "reference": "de01fa521702990ed066446f2931914272336444",
+                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/c859f7c11ef51f3a7bc5527b3df3f3830b620b0d",
+                "reference": "c859f7c11ef51f3a7bc5527b3df3f3830b620b0d",
                 "shasum": ""
             },
             "require-dev": {
@@ -442,7 +442,7 @@
                 "hashing",
                 "password"
             ],
-            "time": "2015-01-09 18:38:25"
+            "time": "2015-02-04 19:29:18"
         },
         {
             "name": "krisanalfa/blade-theme",
@@ -688,16 +688,16 @@
         },
         {
             "name": "reekoheek/bono-auth",
-            "version": "dev-master",
+            "version": "0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "d384f8a3a01f46166bae2d49087eda3d0bc6824f"
+                "reference": "0c71907291574c4830a8d2271df731935f033fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/d384f8a3a01f46166bae2d49087eda3d0bc6824f",
-                "reference": "d384f8a3a01f46166bae2d49087eda3d0bc6824f",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/0c71907291574c4830a8d2271df731935f033fb6",
+                "reference": "0c71907291574c4830a8d2271df731935f033fb6",
                 "shasum": ""
             },
             "require": {
@@ -721,7 +721,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-11-03 09:40:26"
+            "time": "2014-09-13 09:34:28"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -1242,7 +1242,6 @@
     "stability-flags": {
         "xinix-technology/bono": 20,
         "xinix-technology/norm": 20,
-        "reekoheek/bono-auth": 20,
         "krisanalfa/bono-blade": 20,
         "krisanalfa/bono-kraken": 20,
         "krisanalfa/bono-markdown": 20,

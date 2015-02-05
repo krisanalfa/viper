@@ -3,7 +3,12 @@ html, body {
     font-family: 'Lato';
     height: 100%;
     max-width: 100%;
-    font-size: 17px;
+
+    letter-spacing: 0.01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 1.5;
 }
 
 .avatar {
@@ -42,6 +47,22 @@ legend {
     }
 }
 
+@media (min-width: 992px) {
+    .new-toxic {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .alert-container {
+        padding: 0 35px;
+    }
+
+    .alert-container .alert {
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+}
+
 @media (max-width: 992px) {
     .nav-wrapper,
     .list-wrapper,
@@ -70,7 +91,7 @@ legend {
 }
 
 .panel-image {
-    max-width: 80px;
+    max-width: 90px;
 }
 
 textarea[data-editor=markdown] {
@@ -111,10 +132,35 @@ h6 small {
     color: #B5B7BA;
 }
 
+ol {
+    counter-reset: xinix;
+    display: table;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+ol > li {
+    counter-increment: xinix;
+    display: table-row;
+    padding-bottom: 1em;
+}
+
+ol > li::before {
+    content: counter(xinix) ".";
+    display: table-cell; /* aha! */
+    text-align: right;
+}
+
 .timeline-panel {
     animation-delay:0.25s;
     -moz-animation-delay:0.25s;
     -webkit-animation-delay:0.25s;
+}
+
+.timeline-body {
+    font-size: 15px;
+    letter-spacing: 0.001rem;
+    line-height: 1.4;
 }
 
 .link-edit, .link-delete, .panel-footer a {

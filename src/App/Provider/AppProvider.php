@@ -27,6 +27,7 @@ class AppProvider extends Provider
         // When application get request to '/' path
         $app->get('/', function () use ($app) {
             $entries = Norm::factory('Toxic')->find()->sort(['_created_time' => -1]);
+
             $app->render('sites/timeline', [
                 'entries' => $entries,
             ]);
@@ -38,20 +39,19 @@ class AppProvider extends Provider
         });
 
         if ($app->config('mode') === 'production') {
-
-            // TODO: Write error handling here
+            // Error handling
             $app->error(function (Exception $e) use ($app) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
-                echo($app->view->make('sites/error')->render());
+                $app->render('sites/error');
                 $app->stop();
             });
 
+            // Not Found handling
             $app->notFound(function () use ($app) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not found', true, 404);
-                echo($app->view->make('sites/notFound')->render());
+                $app->render('sites/notFound');
                 $app->stop();
             });
-
         }
     }
 }

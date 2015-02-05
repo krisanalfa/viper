@@ -1,6 +1,16 @@
+<?php
+
+$mdown = '';
+
+for ($i=0; $i < 5; $i++) {
+    $mdown = html_entity_decode($markdown);
+}
+
+?>
+
 <div class="row editor-wrapper">
     <div class="col-md-6 editor">
-        <textarea data-editor="markdown" class="markdown-input-source" name="content" id="md-input-<?php echo $id ?>" cols="30" rows="20"><?php echo html_entity_decode(html_entity_decode($markdown)); ?></textarea>
+        <textarea data-editor="markdown" class="markdown-input-source" name="content" id="md-input-<?php echo $id ?>" cols="30" rows="20"><?php echo $mdown; ?></textarea>
     </div>
     <div class="col-md-6 previewer" id="preview-<?php echo $id ?>"></div>
 </div>
@@ -76,5 +86,7 @@
         if (! $('#preview-'+"<?php echo $id ?>"+' table').closest('div').hasClass('table-responsive')) {
             $('#preview-'+"<?php echo $id ?>"+' table').wrap('<div class="table-responsive"></div>');
         }
+
+        $('img').addClass('img-responsive');
     }
 </script>

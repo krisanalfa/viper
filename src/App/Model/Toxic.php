@@ -89,6 +89,17 @@ class Toxic extends Model
 
     public function overView($length = 150)
     {
-        return substr(strip_tags(App::getInstance()->container['markdown']->render(html_entity_decode(html_entity_decode(html_entity_decode($this->get('content')))))), 0, $length);
+        return substr(strip_tags(App::getInstance()->container['markdown']->render($this->getDecodedContent())), 0, $length);
+    }
+
+    public function getDecodedContent()
+    {
+        $content = '';
+
+        for ($i=0; $i < 5; $i++) {
+            $content = html_entity_decode($this->get('content'));
+        }
+
+        return $content;
     }
 }

@@ -7,8 +7,13 @@ return [
     // The Middlewares
     'bono.middlewares' => [
         'KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
-        'Bono\\Middleware\\ContentNegotiatorMiddleware',
+
+        'App\\Middleware\\SlugMiddleware',
+
         'KrisanAlfa\\Theme\\Middleware\\NotificationMiddleware',
+
+        'Bono\\Middleware\\ContentNegotiatorMiddleware',
+
         'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => [
             'driver'       => 'ROH\\BonoAuth\\Driver\\OAuth',
             'baseUrl'      => 'https://account.app.xinix.co.id/index.php',
@@ -20,6 +25,7 @@ return [
             'redirectUri'  => URL::site('/login'), // application redirect url
             'scope'        => 'user',
         ],
+
         'Bono\\Middleware\\SessionMiddleware',
     ],
 ];

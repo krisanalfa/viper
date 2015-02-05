@@ -111,10 +111,7 @@ class VersionProvider extends Provider
             // Only do if configuration file return an array
             if (is_array($config)) {
                 foreach ($config as $key => $value) {
-                    // Only do if value is not empty and not null
-                    if ($value) {
-                        $this->app->config($key, $value);
-                    }
+                    $this->app->config($key, $value);
                 }
             }
         }

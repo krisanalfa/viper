@@ -3,7 +3,7 @@
         "xinix-technology/bono": "dev-master",
         "xinix-technology/norm": "dev-master",
 
-        "reekoheek/bono-auth": "dev-master",
+        "reekoheek/bono-auth": "~0.1.6",
 
         "krisanalfa/bono-blade": "dev-master",
         "krisanalfa/bono-kraken": "dev-master",

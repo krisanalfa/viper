@@ -1,5 +1,5 @@
 <div class="alert-container">
-    <div class="container">
+    <!-- <div class="container"> -->
         @foreach($messages as $message)
             <?php if($options['level'] == 'error') { $options['level'] = 'danger'; } ?>
             <div class="alert alert-{{ $options['level'] }} alert-dismissible" role="alert">
@@ -8,5 +8,5 @@
                 <strong>{{ ucfirst($options['level']) }}</strong> {{ $message['message'] }}
             </div>
         @endforeach
-    </div>
+    <!-- </div> -->
 </div>
