@@ -71,30 +71,30 @@
 
 @section('injector')
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-        appId      : '508072309320794',
-        xfbml      : true,
-        version    : 'v2.2'
-    });
-  };
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '508072309320794',
+            xfbml      : true,
+            version    : 'v2.2'
+        });
+    };
 
-  (function(d, s, id){
+    (function(d, s, id){
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {return;}
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+    }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <script>
-$('.twitter-share').click(function() {
-    var winTop = (screen.height / 2) - (275 / 2);
-    var winLeft = (screen.width / 2) - (550 / 2);
-    var href = $(this).data('href');
-    window.open(href, 'Share on Twitter', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + 550 + ',height=' + 275);
-});
+    $('.twitter-share').click(function() {
+        var winTop = (screen.height / 2) - (275 / 2);
+        var winLeft = (screen.width / 2) - (550 / 2);
+        var href = $(this).data('href');
+        window.open(href, 'Share on Twitter', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + 550 + ',height=' + 275);
+    });
 </script>
 
 <script>
@@ -136,6 +136,6 @@ $('.twitter-share').click(function() {
 <!-- <script>
     window.NOISE_SHARED_KEY = '5833c02d-5dcc-54bc-9a86-89a88579fb27';
     window.NOISE_SHORT_NAME = 'viper';
-</script> -->
-<!-- <script src="http://localhost/noise/index.php/api/js"></script> -->
+</script>
+<script src="http://localhost/noise/index.php/api/js"></script> -->
 @endsection
