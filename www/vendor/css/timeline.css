@@ -86,7 +86,7 @@
             text-align: center;
             position: absolute;
             left: 50%;
-            margin-left: -40px;
+            margin-left: -45px;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
             border-bottom-right-radius: 50%;
@@ -199,7 +199,7 @@
     }
 
     ul.timeline > li > .timeline-badge {
-        left: 0;
+        left: -3px;
         margin-left: 0;
         top: 0;
     }

@@ -94,10 +94,10 @@ class Toxic extends Model
 
     public function getDecodedContent()
     {
-        $content = '';
+        $content = $this->get('content');
 
         for ($i=0; $i < 5; $i++) {
-            $content = html_entity_decode($this->get('content'));
+            $content = html_entity_decode($content, ENT_QUOTES);
         }
 
         return $content;

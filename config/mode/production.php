@@ -4,6 +4,9 @@ use Bono\Helper\URL;
 
 // BONO
 return [
+    // Application Name
+    'name' => 'VIPER Production',
+
     // The Middlewares
     'bono.middlewares' => [
         'KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
@@ -13,6 +16,8 @@ return [
         'KrisanAlfa\\Theme\\Middleware\\NotificationMiddleware',
 
         'Bono\\Middleware\\ContentNegotiatorMiddleware',
+
+        'Bono\\Middleware\\StaticPageMiddleware',
 
         'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => [
             'driver'       => 'ROH\\BonoAuth\\Driver\\OAuth',
@@ -24,6 +29,7 @@ return [
             'clientSecret' => 'ed9d2e5e0ca5e9ddf9b2cc3284bf002c',
             'redirectUri'  => URL::site('/login'), // application redirect url
             'scope'        => 'user',
+            'debug'        => true,
         ],
 
         'Bono\\Middleware\\SessionMiddleware',

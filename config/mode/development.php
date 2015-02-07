@@ -4,6 +4,9 @@ use Bono\Helper\URL;
 
 // BONO
 return [
+    // Application Name
+    'name' => 'VIPER Development',
+
     // The Middlewares
     'bono.middlewares' => [
         'KrisanAlfa\\Kraken\\Middleware\\ControllerMiddleware',
@@ -26,6 +29,7 @@ return [
             'clientSecret' => '8ea12e5cb38689ef0e2cfb94f8f2d546',
             'redirectUri'  => URL::site('/login'), // application redirect url
             'scope'        => 'user',
+            'debug'        => true,
         ],
 
         'Bono\\Middleware\\SessionMiddleware',
